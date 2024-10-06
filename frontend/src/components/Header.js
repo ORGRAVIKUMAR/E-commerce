@@ -15,7 +15,7 @@ import { logout } from "../actions/userActions";
 /* COMPONENTS */
 import SearchBox from "./SearchBox";
 
-// import logo from "../logo.png";
+import logo from "./e-mart logo.jpg";
 
 function Header() {
   /* PULLING A PART OF STATE FROM THE ACTU  AL STATE IN THE REDUX STORE */
@@ -36,15 +36,14 @@ function Header() {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <h1>Anime House</h1>
+              {/* <h1>E-Mart</h1> */}
+              <img src={logo}alt="E-mart" width="50px"></img>
             </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
-
           <Navbar.Collapse id="navbarScroll">
             <SearchBox />
-
             <Nav
               className="ms-auto my-2 my-lg-0"
               style={{ maxHeight: "100px" }}
